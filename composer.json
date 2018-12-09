@@ -1,0 +1,26 @@
+{
+    "name": "vladflonta/magento2-validate-hostname-fix",
+    "description": "Update Zend_Validate_Hostname for validating new TLDs according with the one in version 1.12.20 of the Zend Framework.",
+    "authors":[{
+        "name": "Vlad Flonta",
+        "homepage": "https://github.com/vladflonta"
+    }],
+    "require": {
+        "php": ">=5.2.11",
+        "magento/zendframework1": "<1.12.17"
+    },
+    "type": "library",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "autoload": {
+        "psr-0": {
+            "Zend_": ""
+        },
+        "files": [
+            "Zend/Validate/Hostname.php"
+        ],
+        "exclude-from-classmap": [
+            "../../magento/zendframework1/library/Zend/Validate/Hostname.php"
+        ]
+    }
+}
